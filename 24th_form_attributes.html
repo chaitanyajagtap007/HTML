@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form_attributes</title>
+	<!-- readonly :- fkt read kata yete.
+	disabled:- display hote pn store nahi karat.
+	autofocus:-tyavr gheun jate
+	 -->
+</head>
+<body>
+	<form action="save.html" method="get" enctype="">
+		<fieldset>
+			<legend>Details</legend>
+			<label>User name :</label>
+			<input type="text" name="name" placeholder=" Full name" value="crj" readonly><br><br>
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="email" value="crj123@gmail.com" disabled>
+			<br><br>
+			<label>Mobile:</label>
+			<input type="number" name="" pattern="{0-9}9(10)" minlength="10" maxlength="10" required><br><br>
+			<!-- <input type="number" name="mobile" placeholder="phone number" autofocus  autocomplete="off" min="1" max="20" readonly required><br><br> -->
+			<label>Address:</label>
+			<textarea name="address" placeholder="address" rows="10" cols="20"></textarea><br><br>
+			<label>DOB:</label>
+			<input type="date" name="DOB" value=""><br><br>
+			<label>Photo:</label>
+			<input type="file" name="photo"><br><br>
+			<label>Gender:</label>
+			<input type="radio" name="gender" value="male" checked><b>male</b>
+			<input type="radio" name="gender" value="female"><b>female</b><br><br>
+			<label>Course:</label>
+			<select>
+				<option>Choose</option>
+				<option>Back </option>
+				<option>front</option>
+				<option>DB</option>
+				<option selected>Full</option>
+			</select><br><br>
+			<label>Subject:</label>
+			<input type="checkbox" name="sub1" checked><b>HTML</b>
+			<input type="checkbox" name="sub2" checked><b>CSS</b>
+			<input type="checkbox" name="sub3"><b>JS</b><br><br>
+			<button type="submit">submit</button>
+			<button type="reset	">Reset</button>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- form :- action="Path" method="get/post"  enctype="multipart/form-data"
+	enctype="multipart/form-data" : file name and path send karnya sathi -->
+</head>
+<body>
+	<form action="path" method="get/post" enctype="multipart/form-data"> 
+		<fieldset>
+			<legend>Personal Info</legend>           <!-- border madhe text display karte -->
+			<label>Name:</label>                     <!-- text karnyache kam karte-->
+			<input type="text" name="sname"> <br><br>            <!-- form madhe input ghenyache kam karte-->
+			<label> Email:</label>
+			<input type="email" name="semail"><br><br>     <!-- form madhe email ghenyache kam karte-->
+			<label> Mobile:</label>
+			<input type="mobile" name="smobileno"><br><br>    <!-- form madhe no. ghenyache kam karte-->
+			<label> DOB</label>
+			<input type="date" name="sdob"><br><br>      <!-- form madhe date ghenyache kam karte-->
+			<label> Photo</label>
+			<input type="file" name="photo"><br><br>      <!-- form madhe file ghenyache kam karte-->
+			<label>Gender</label>
+			<input type="radio" name="gender"><b>Male</b>  <!-- form madhe select ghenyache kam karte-->
+			<input type="radio" name="gender"><b>Female</b><br>
+		</fieldset>
+		<fieldset>
+			<legend>Address</legend>
+			<label>State:</label>
+			<select name="state">
+				<option>Choose</option>
+				<option>Maha</option>
+				<option>Gui</option>
+				<option>raj</option>
+			</select><br><br>
+			<label>Full Address</label>
+			<textarea name="address"></textarea><br><br>
+			<label>pincode</label>
+			<input type="number" name="pincode">
+		</fieldset>
+		<fieldset>
+			<legend>Education & login Details</legend>
+			<label>Dept:</label>
+			<select name="dept">
+				<option>Choose Dept</option>
+				<option>Comp</option>
+				<option>Math</option>
+				<option>Chem</option>
+			</select><br><br>
+			<label>Subject:</label>
+			<input type="checkbox" name="sub1"><b>Eng</b>
+			<input type="checkbox" name="sub2"><b>Math</b>
+			<input type="checkbox" name="sub3"><b>Comp</b>
+			<br><br>
+			<label>Username:</label>
+			<input type="text" name="Username"><br><br>
+			<label>Password:</label>
+			<input type="password" name="Password">
+		</fieldset>
+		<!-- <fieldset>
+			<legend>Student_info</legend>
+			<label>Name</label>
+			<input type="text" name=""><br><br>
+			<label>class</label>
+			<input type="text" name="">
+		</fieldset> -->
+		<center>
+			<input type="reset" name="">
+			<input type="submit" name=""> <br><br>
+		<!-- </center> -->
+		<button type="reset">Empty</button>
+		<button type="submit">save</button>
+		<button type="button">save</button>
+		</center>
+	</form>
+</body>
+</html>
+	
+
+
+
+
+
+
+<!-- Demos->
+Admission System form
+Exam form
+Votting Card form
+ -->

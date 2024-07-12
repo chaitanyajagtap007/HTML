@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>marquee_tag</title>
+</head>
+<body>
+	<!--
+		1] scrollamount=""
+		2] loop=""
+		3] scrolldelay=""
+		4] bgcolor=""
+		5] height=""
+		6] width=""
+		7] direction=""     :-  up/down/left/right.
+		8] behavior=""  :- slide/alternate/scroll
+	-->
+	<h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</h1>	
+	<marquee scrollamount="10" loop="5" bgcolor="yellow">
+		<h1>Wellcome</h1>
+	</marquee>
+	<marquee scrolldelay="50" bgcolor="blue">       <!-- 10 = 1second-->
+		<h1>Wellcome lorem</h1>
+	</marquee>
+	<marquee height="200px" width="100%" bgcolor="red" direction="up" scrollamount="50">
+		<h1>Wellcome</h1>
+	</marquee>
+	<marquee height="200px" width="100%" bgcolor="red" direction="down" scrollamount="50" behavior="scroll">
+		<h1>Wellcome</h1>
+	</marquee>
+	
+	<marquee height="200px" width="100%" bgcolor="red" scrollamount="50"  onmouseover="this.stop()" 
+	 onmouseout="this.start()">
+		<h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</h1>
+	</marquee>
+</body>
+</html>
+
+
+<!-- scrollamount:- speed control karte.
+	 loop:- kiti ves loop parat repeat karaycha
+
+-->
